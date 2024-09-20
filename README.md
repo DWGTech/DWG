@@ -14,7 +14,9 @@ Please install [CMake](https://cmake.org)
     mkdir build && cd build
     cmake .. -DCMAKE_BUILD_TYPE=Release
     make
-
+## Run
+    ./DWG_CUDA --in_path <path> --in_name <file name> --out_path <path>
+See --help for the function of each flag  `./DWG_CUDA --help`
     
   
 
