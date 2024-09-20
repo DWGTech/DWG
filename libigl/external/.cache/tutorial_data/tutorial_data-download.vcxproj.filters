@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\tutorial_data\CMakeFiles\278e1fc76ff677e0c7c30ebf71e93a71\tutorial_data-download-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\tutorial_data\CMakeFiles\278e1fc76ff677e0c7c30ebf71e93a71\tutorial_data-download-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\tutorial_data\CMakeFiles\278e1fc76ff677e0c7c30ebf71e93a71\tutorial_data-download-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\tutorial_data\CMakeFiles\278e1fc76ff677e0c7c30ebf71e93a71\tutorial_data-download-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\tutorial_data\CMakeFiles\278e1fc76ff677e0c7c30ebf71e93a71\tutorial_data-download-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\tutorial_data\CMakeFiles\278e1fc76ff677e0c7c30ebf71e93a71\tutorial_data-download-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\tutorial_data\CMakeFiles\278e1fc76ff677e0c7c30ebf71e93a71\tutorial_data-download-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\tutorial_data\CMakeFiles\278e1fc76ff677e0c7c30ebf71e93a71\tutorial_data-download-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\tutorial_data\CMakeFiles\885e8b3fec1b956fc5d38624a0dfb413\tutorial_data-download-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\tutorial_data\CMakeFiles\d7bb9ca15b5c6d14a8ea52b1d4525420\tutorial_data-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\tutorial_data\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\dev\libigl\external\.cache\tutorial_data\CMakeFiles\tutorial_data-download" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{7A7E8A8E-4A51-320D-99D7-EFD1A7610EC8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

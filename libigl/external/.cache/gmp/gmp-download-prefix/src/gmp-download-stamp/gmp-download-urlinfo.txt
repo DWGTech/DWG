@@ -1,0 +1,3 @@
+repository='external project URL'
+module='https://cgal.geometryfactory.com/CGAL/precompiled_libs/auxiliary/x64/GMP/5.0.1/gmp-all-CGAL-3.9.zip'
+tag='MD5=508c1292319c832609329116a8234c9f'

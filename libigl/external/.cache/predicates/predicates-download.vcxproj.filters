@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\predicates\CMakeFiles\e4c5bd5257c282a0db8a5882d14a2d8c\predicates-download-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\predicates\CMakeFiles\e4c5bd5257c282a0db8a5882d14a2d8c\predicates-download-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\predicates\CMakeFiles\e4c5bd5257c282a0db8a5882d14a2d8c\predicates-download-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\predicates\CMakeFiles\e4c5bd5257c282a0db8a5882d14a2d8c\predicates-download-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\predicates\CMakeFiles\e4c5bd5257c282a0db8a5882d14a2d8c\predicates-download-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\predicates\CMakeFiles\e4c5bd5257c282a0db8a5882d14a2d8c\predicates-download-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\predicates\CMakeFiles\e4c5bd5257c282a0db8a5882d14a2d8c\predicates-download-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\predicates\CMakeFiles\e4c5bd5257c282a0db8a5882d14a2d8c\predicates-download-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\predicates\CMakeFiles\6a6df175cb381d58fdae19f248ccbce9\predicates-download-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\predicates\CMakeFiles\677da4d8292a8fdc1082f6116a376c3e\predicates-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\predicates\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\dev\libigl\external\.cache\predicates\CMakeFiles\predicates-download" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{EB8A9BAC-98AF-3CDC-B2D1-6963E5A043C4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

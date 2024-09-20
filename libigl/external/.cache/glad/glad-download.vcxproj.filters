@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\glad\CMakeFiles\9edc56fd48fff637d3a425276ddc62be\glad-download-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\glad\CMakeFiles\9edc56fd48fff637d3a425276ddc62be\glad-download-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\glad\CMakeFiles\9edc56fd48fff637d3a425276ddc62be\glad-download-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\glad\CMakeFiles\9edc56fd48fff637d3a425276ddc62be\glad-download-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\glad\CMakeFiles\9edc56fd48fff637d3a425276ddc62be\glad-download-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\glad\CMakeFiles\9edc56fd48fff637d3a425276ddc62be\glad-download-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\glad\CMakeFiles\9edc56fd48fff637d3a425276ddc62be\glad-download-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\glad\CMakeFiles\9edc56fd48fff637d3a425276ddc62be\glad-download-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\glad\CMakeFiles\a03b9484aac19e54d1b2a0d4f6ca513d\glad-download-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\glad\CMakeFiles\de9943659816976ecd2a1acdc1c41dcc\glad-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\glad\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\dev\libigl\external\.cache\glad\CMakeFiles\glad-download" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{F2BF903C-40E6-37CA-96D8-400FC8B18973}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

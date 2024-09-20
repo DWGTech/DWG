@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\gmp\CMakeFiles\4b5dc5cc0485671b2c2a565acb0387e8\gmp-download-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\gmp\CMakeFiles\4b5dc5cc0485671b2c2a565acb0387e8\gmp-download-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\gmp\CMakeFiles\4b5dc5cc0485671b2c2a565acb0387e8\gmp-download-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\gmp\CMakeFiles\4b5dc5cc0485671b2c2a565acb0387e8\gmp-download-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\gmp\CMakeFiles\4b5dc5cc0485671b2c2a565acb0387e8\gmp-download-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\gmp\CMakeFiles\4b5dc5cc0485671b2c2a565acb0387e8\gmp-download-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\gmp\CMakeFiles\4b5dc5cc0485671b2c2a565acb0387e8\gmp-download-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\gmp\CMakeFiles\4b5dc5cc0485671b2c2a565acb0387e8\gmp-download-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\gmp\CMakeFiles\a0b8d7cf1bef970269339bb59a711fc1\gmp-download-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\gmp\CMakeFiles\943559b8bc68c7de62d33f6d2afaf2f0\gmp-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\gmp\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\dev\libigl\external\.cache\gmp\CMakeFiles\gmp-download" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{73F7B906-37C1-339C-B0AA-A4047CBC8319}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

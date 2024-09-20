@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\stb\CMakeFiles\7f60a55c1714fcc86dc7fb5b2507e35c\stb-download-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\stb\CMakeFiles\7f60a55c1714fcc86dc7fb5b2507e35c\stb-download-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\stb\CMakeFiles\7f60a55c1714fcc86dc7fb5b2507e35c\stb-download-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\stb\CMakeFiles\7f60a55c1714fcc86dc7fb5b2507e35c\stb-download-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\stb\CMakeFiles\7f60a55c1714fcc86dc7fb5b2507e35c\stb-download-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\stb\CMakeFiles\7f60a55c1714fcc86dc7fb5b2507e35c\stb-download-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\stb\CMakeFiles\7f60a55c1714fcc86dc7fb5b2507e35c\stb-download-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\stb\CMakeFiles\7f60a55c1714fcc86dc7fb5b2507e35c\stb-download-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\stb\CMakeFiles\35808429f53e006dc5a6bb2a281ae652\stb-download-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\stb\CMakeFiles\d5592e22f3b8a82948a22452933fe48f\stb-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\stb\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\dev\libigl\external\.cache\stb\CMakeFiles\stb-download" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{27708A2D-7E9C-3D85-816F-815671E9C11B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

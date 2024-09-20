@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\eigen\CMakeFiles\06ce6d5c0ddcac91e2fe0f53a1b81dc5\eigen-download-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\eigen\CMakeFiles\06ce6d5c0ddcac91e2fe0f53a1b81dc5\eigen-download-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\eigen\CMakeFiles\06ce6d5c0ddcac91e2fe0f53a1b81dc5\eigen-download-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\eigen\CMakeFiles\06ce6d5c0ddcac91e2fe0f53a1b81dc5\eigen-download-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\eigen\CMakeFiles\06ce6d5c0ddcac91e2fe0f53a1b81dc5\eigen-download-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\eigen\CMakeFiles\06ce6d5c0ddcac91e2fe0f53a1b81dc5\eigen-download-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\eigen\CMakeFiles\06ce6d5c0ddcac91e2fe0f53a1b81dc5\eigen-download-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\eigen\CMakeFiles\06ce6d5c0ddcac91e2fe0f53a1b81dc5\eigen-download-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\eigen\CMakeFiles\c03a3250b8cd9e2997432af397273a17\eigen-download-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\eigen\CMakeFiles\ae9a1e92ad23bd6b48467b0805abe940\eigen-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\eigen\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\dev\libigl\external\.cache\eigen\CMakeFiles\eigen-download" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{E0EABBF9-4AD3-379D-9C0B-B0A3C88A7EC4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

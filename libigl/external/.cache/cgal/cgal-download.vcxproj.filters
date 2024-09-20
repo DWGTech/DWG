@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\cgal\CMakeFiles\c277fe31807802635f9b89dd9d26000e\cgal-download-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\cgal\CMakeFiles\c277fe31807802635f9b89dd9d26000e\cgal-download-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\cgal\CMakeFiles\c277fe31807802635f9b89dd9d26000e\cgal-download-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\cgal\CMakeFiles\c277fe31807802635f9b89dd9d26000e\cgal-download-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\cgal\CMakeFiles\c277fe31807802635f9b89dd9d26000e\cgal-download-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\cgal\CMakeFiles\c277fe31807802635f9b89dd9d26000e\cgal-download-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\cgal\CMakeFiles\c277fe31807802635f9b89dd9d26000e\cgal-download-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\cgal\CMakeFiles\c277fe31807802635f9b89dd9d26000e\cgal-download-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\cgal\CMakeFiles\2cc1424b26e3fb7ba1b7f1430b32fbd2\cgal-download-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\cgal\CMakeFiles\b5b7f52c9d58f4d5514eb41e0a221417\cgal-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\cgal\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\dev\libigl\external\.cache\cgal\CMakeFiles\cgal-download" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{46A69357-EC87-3213-9A6E-C68004610E30}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

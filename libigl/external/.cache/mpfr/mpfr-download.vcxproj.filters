@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\mpfr\CMakeFiles\c802b65cef7d2e60003764b2f6b28e96\mpfr-download-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\mpfr\CMakeFiles\c802b65cef7d2e60003764b2f6b28e96\mpfr-download-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\mpfr\CMakeFiles\c802b65cef7d2e60003764b2f6b28e96\mpfr-download-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\mpfr\CMakeFiles\c802b65cef7d2e60003764b2f6b28e96\mpfr-download-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\mpfr\CMakeFiles\c802b65cef7d2e60003764b2f6b28e96\mpfr-download-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\mpfr\CMakeFiles\c802b65cef7d2e60003764b2f6b28e96\mpfr-download-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\mpfr\CMakeFiles\c802b65cef7d2e60003764b2f6b28e96\mpfr-download-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\mpfr\CMakeFiles\c802b65cef7d2e60003764b2f6b28e96\mpfr-download-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\mpfr\CMakeFiles\73163a37324bace058235c507e521d50\mpfr-download-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\mpfr\CMakeFiles\0a71afb5b0f4aecb508004f03a054ed6\mpfr-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\mpfr\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\dev\libigl\external\.cache\mpfr\CMakeFiles\mpfr-download" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{6730C3CF-E57E-3596-966E-ECCDDC397CE0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

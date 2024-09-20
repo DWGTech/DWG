@@ -1,0 +1,3 @@
+repository='https://github.com/embree/embree.git'
+module=''
+tag='origin'

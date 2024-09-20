@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\imguizmo\CMakeFiles\94a54c74b6e045c626a09e7e91e4ab31\imguizmo-download-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\imguizmo\CMakeFiles\94a54c74b6e045c626a09e7e91e4ab31\imguizmo-download-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\imguizmo\CMakeFiles\94a54c74b6e045c626a09e7e91e4ab31\imguizmo-download-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\imguizmo\CMakeFiles\94a54c74b6e045c626a09e7e91e4ab31\imguizmo-download-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\imguizmo\CMakeFiles\94a54c74b6e045c626a09e7e91e4ab31\imguizmo-download-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\imguizmo\CMakeFiles\94a54c74b6e045c626a09e7e91e4ab31\imguizmo-download-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\imguizmo\CMakeFiles\94a54c74b6e045c626a09e7e91e4ab31\imguizmo-download-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\imguizmo\CMakeFiles\94a54c74b6e045c626a09e7e91e4ab31\imguizmo-download-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\imguizmo\CMakeFiles\61aeb742fa2a9638e5761c5162880765\imguizmo-download-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\imguizmo\CMakeFiles\1b673fb74364c3f2b4f37c694aa82eae\imguizmo-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\imguizmo\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\dev\libigl\external\.cache\imguizmo\CMakeFiles\imguizmo-download" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{E4DEC478-049B-3755-BB96-35BD7AD1F820}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

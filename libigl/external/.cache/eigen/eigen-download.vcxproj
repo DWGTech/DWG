@@ -1,0 +1,963 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{69658AB9-B721-3D2E-AA22-2C85EB639632}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>eigen-download</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\eigen\CMakeFiles\06ce6d5c0ddcac91e2fe0f53a1b81dc5\eigen-download-mkdir.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Creating directories for 'eigen-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/cmake/../external/eigen
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/tutorial/build/eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/eigen/eigen-download-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp/$(Configuration)/eigen-download-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Creating directories for 'eigen-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/cmake/../external/eigen
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/tutorial/build/eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/eigen/eigen-download-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp/$(Configuration)/eigen-download-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Creating directories for 'eigen-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/cmake/../external/eigen
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/tutorial/build/eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/eigen/eigen-download-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp/$(Configuration)/eigen-download-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Creating directories for 'eigen-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/cmake/../external/eigen
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/tutorial/build/eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/eigen/eigen-download-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp/$(Configuration)/eigen-download-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\eigen\CMakeFiles\06ce6d5c0ddcac91e2fe0f53a1b81dc5\eigen-download-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing download step (git clone) for 'eigen-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\dev\libigl\external
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -P C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/tmp/eigen-download-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp/$(Configuration)/eigen-download-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\eigen-download-gitinfo.txt;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing download step (git clone) for 'eigen-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\dev\libigl\external
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -P C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/tmp/eigen-download-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp/$(Configuration)/eigen-download-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\eigen-download-gitinfo.txt;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing download step (git clone) for 'eigen-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\dev\libigl\external
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -P C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/tmp/eigen-download-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp/$(Configuration)/eigen-download-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\eigen-download-gitinfo.txt;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing download step (git clone) for 'eigen-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\dev\libigl\external
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -P C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/tmp/eigen-download-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp/$(Configuration)/eigen-download-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\eigen-download-gitinfo.txt;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\eigen\CMakeFiles\06ce6d5c0ddcac91e2fe0f53a1b81dc5\eigen-download-update.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing update step for 'eigen-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\dev\libigl\external\eigen
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -P C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/tmp/eigen-download-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing update step for 'eigen-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\dev\libigl\external\eigen
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -P C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/tmp/eigen-download-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing update step for 'eigen-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\dev\libigl\external\eigen
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -P C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/tmp/eigen-download-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing update step for 'eigen-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\dev\libigl\external\eigen
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -P C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/tmp/eigen-download-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\eigen\CMakeFiles\06ce6d5c0ddcac91e2fe0f53a1b81dc5\eigen-download-patch.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No patch step for 'eigen-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp/$(Configuration)/eigen-download-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No patch step for 'eigen-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp/$(Configuration)/eigen-download-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No patch step for 'eigen-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp/$(Configuration)/eigen-download-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No patch step for 'eigen-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp/$(Configuration)/eigen-download-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\eigen\CMakeFiles\06ce6d5c0ddcac91e2fe0f53a1b81dc5\eigen-download-configure.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No configure step for 'eigen-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\dev\libigl\tutorial\build\eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp/$(Configuration)/eigen-download-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\tmp\eigen-download-cfgcmd.txt;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No configure step for 'eigen-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\dev\libigl\tutorial\build\eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp/$(Configuration)/eigen-download-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\tmp\eigen-download-cfgcmd.txt;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No configure step for 'eigen-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\dev\libigl\tutorial\build\eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp/$(Configuration)/eigen-download-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\tmp\eigen-download-cfgcmd.txt;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No configure step for 'eigen-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\dev\libigl\tutorial\build\eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp/$(Configuration)/eigen-download-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\tmp\eigen-download-cfgcmd.txt;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\eigen\CMakeFiles\06ce6d5c0ddcac91e2fe0f53a1b81dc5\eigen-download-build.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No build step for 'eigen-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\dev\libigl\tutorial\build\eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp/$(Configuration)/eigen-download-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No build step for 'eigen-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\dev\libigl\tutorial\build\eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp/$(Configuration)/eigen-download-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No build step for 'eigen-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\dev\libigl\tutorial\build\eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp/$(Configuration)/eigen-download-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No build step for 'eigen-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\dev\libigl\tutorial\build\eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp/$(Configuration)/eigen-download-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\eigen\CMakeFiles\06ce6d5c0ddcac91e2fe0f53a1b81dc5\eigen-download-install.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No install step for 'eigen-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\dev\libigl\tutorial\build\eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp/$(Configuration)/eigen-download-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No install step for 'eigen-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\dev\libigl\tutorial\build\eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp/$(Configuration)/eigen-download-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No install step for 'eigen-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\dev\libigl\tutorial\build\eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp/$(Configuration)/eigen-download-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No install step for 'eigen-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\dev\libigl\tutorial\build\eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp/$(Configuration)/eigen-download-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\eigen\CMakeFiles\06ce6d5c0ddcac91e2fe0f53a1b81dc5\eigen-download-test.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No test step for 'eigen-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\dev\libigl\tutorial\build\eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp/$(Configuration)/eigen-download-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No test step for 'eigen-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\dev\libigl\tutorial\build\eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp/$(Configuration)/eigen-download-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No test step for 'eigen-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\dev\libigl\tutorial\build\eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp/$(Configuration)/eigen-download-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No test step for 'eigen-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\dev\libigl\tutorial\build\eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp/$(Configuration)/eigen-download-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\eigen\CMakeFiles\c03a3250b8cd9e2997432af397273a17\eigen-download-complete.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Completed 'eigen-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/eigen/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/eigen/CMakeFiles/$(Configuration)/eigen-download-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp/$(Configuration)/eigen-download-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-install;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-mkdir;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-download;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-update;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-patch;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-configure;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-build;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\eigen\CMakeFiles\$(Configuration)\eigen-download-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Completed 'eigen-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/eigen/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/eigen/CMakeFiles/$(Configuration)/eigen-download-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp/$(Configuration)/eigen-download-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-install;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-mkdir;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-download;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-update;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-patch;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-configure;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-build;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\eigen\CMakeFiles\$(Configuration)\eigen-download-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Completed 'eigen-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/eigen/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/eigen/CMakeFiles/$(Configuration)/eigen-download-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp/$(Configuration)/eigen-download-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-install;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-mkdir;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-download;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-update;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-patch;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-configure;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-build;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\eigen\CMakeFiles\$(Configuration)\eigen-download-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Completed 'eigen-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/eigen/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/eigen/CMakeFiles/$(Configuration)/eigen-download-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/eigen/eigen-download-prefix/src/eigen-download-stamp/$(Configuration)/eigen-download-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-install;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-mkdir;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-download;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-update;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-patch;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-configure;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-build;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\src\eigen-download-stamp\$(Configuration)\eigen-download-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\eigen\CMakeFiles\$(Configuration)\eigen-download-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\eigen\CMakeFiles\ae9a1e92ad23bd6b48467b0805abe940\eigen-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\eigen\CMakeFiles\$(Configuration)\eigen-download-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\eigen\CMakeFiles\eigen-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\eigen\CMakeFiles\$(Configuration)\eigen-download-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\eigen\CMakeFiles\eigen-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\eigen\CMakeFiles\$(Configuration)\eigen-download-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\eigen\CMakeFiles\eigen-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\eigen\CMakeFiles\$(Configuration)\eigen-download-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\eigen\CMakeFiles\eigen-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\eigen\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/dev/libigl/external/.cache/eigen/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\cmake\bin\cmake.exe" -SC:/dev/libigl/external/.cache/eigen -BC:/dev/libigl/external/.cache/eigen --check-stamp-file C:/dev/libigl/external/.cache/eigen/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeDetermineSystem.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeSystem.cmake.in;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\ExternalProject-gitupdate.cmake.in;C:\Program Files\cmake\share\cmake-3.18\Modules\ExternalProject.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\FindGit.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\RepositoryInfo.txt.in;C:\dev\libigl\external\.cache\eigen\CMakeFiles\3.18.2\CMakeSystem.cmake;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\tmp\eigen-download-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\eigen\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/dev/libigl/external/.cache/eigen/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\cmake\bin\cmake.exe" -SC:/dev/libigl/external/.cache/eigen -BC:/dev/libigl/external/.cache/eigen --check-stamp-file C:/dev/libigl/external/.cache/eigen/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeDetermineSystem.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeSystem.cmake.in;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\ExternalProject-gitupdate.cmake.in;C:\Program Files\cmake\share\cmake-3.18\Modules\ExternalProject.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\FindGit.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\RepositoryInfo.txt.in;C:\dev\libigl\external\.cache\eigen\CMakeFiles\3.18.2\CMakeSystem.cmake;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\tmp\eigen-download-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\eigen\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/dev/libigl/external/.cache/eigen/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\cmake\bin\cmake.exe" -SC:/dev/libigl/external/.cache/eigen -BC:/dev/libigl/external/.cache/eigen --check-stamp-file C:/dev/libigl/external/.cache/eigen/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeDetermineSystem.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeSystem.cmake.in;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\ExternalProject-gitupdate.cmake.in;C:\Program Files\cmake\share\cmake-3.18\Modules\ExternalProject.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\FindGit.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\RepositoryInfo.txt.in;C:\dev\libigl\external\.cache\eigen\CMakeFiles\3.18.2\CMakeSystem.cmake;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\tmp\eigen-download-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\eigen\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/dev/libigl/external/.cache/eigen/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\cmake\bin\cmake.exe" -SC:/dev/libigl/external/.cache/eigen -BC:/dev/libigl/external/.cache/eigen --check-stamp-file C:/dev/libigl/external/.cache/eigen/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeDetermineSystem.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeSystem.cmake.in;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\ExternalProject-gitupdate.cmake.in;C:\Program Files\cmake\share\cmake-3.18\Modules\ExternalProject.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\FindGit.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\RepositoryInfo.txt.in;C:\dev\libigl\external\.cache\eigen\CMakeFiles\3.18.2\CMakeSystem.cmake;C:\dev\libigl\external\.cache\eigen\eigen-download-prefix\tmp\eigen-download-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\eigen\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\dev\libigl\external\.cache\eigen\CMakeFiles\eigen-download">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\dev\libigl\external\.cache\eigen\ZERO_CHECK.vcxproj">
+      <Project>{F7B25084-6981-3227-97EA-D3B812CA7426}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

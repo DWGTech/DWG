@@ -1,0 +1,3 @@
+repository='https://github.com/CedricGuillemet/ImGuizmo.git'
+module=''
+tag='origin'

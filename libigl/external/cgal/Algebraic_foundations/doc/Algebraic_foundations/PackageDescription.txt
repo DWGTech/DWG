@@ -1,0 +1,155 @@
+/// \defgroup PkgAlgebraicFoundations Algebraic Foundations Reference
+
+/// \defgroup PkgAlgebraicFoundationsAlgebraicStructuresConcepts Concepts
+/// \ingroup PkgAlgebraicFoundations
+
+/*!
+\addtogroup PkgAlgebraicFoundations
+\todo check generated documentation
+
+\cgalPkgDescriptionBegin{Algebraic Foundations,PkgAlgebraicFoundationsSummary}
+\cgalPkgPicture{Algebraic_foundations2.png}
+\cgalPkgSummaryBegin
+\cgalPkgAuthor{Michael Hemmer}
+\cgalPkgDesc{This package defines what algebra means for \cgal, in terms of concepts, classes and functions. The main features are: (i) explicit concepts for interoperability of types  (ii) separation between algebraic types (not necessarily embeddable into the reals), and number types (embeddable into the reals).}
+\cgalPkgManuals{Chapter_Algebraic_Foundations,PkgAlgebraicFoundations}
+\cgalPkgSummaryEnd
+\cgalPkgShortInfoBegin
+\cgalPkgSince{3.3}
+\cgalPkgBib{cgal:h-af}
+\cgalPkgLicense{\ref licensesLGPL "LGPL"}
+\cgalPkgShortInfoEnd
+\cgalPkgDescriptionEnd
+
+\cgalClassifedRefPages
+
+## Algebraic Structures ##
+
+### Concepts ###
+
+- `IntegralDomainWithoutDivision`
+- `IntegralDomain`
+- `UniqueFactorizationDomain`
+- `EuclideanRing`
+- `Field`
+- `FieldWithSqrt`
+- `FieldWithKthRoot`
+- `FieldWithRootOf`
+
+- `AlgebraicStructureTraits`
+- `AlgebraicStructureTraits_::IsZero`
+- `AlgebraicStructureTraits_::IsOne`
+- `AlgebraicStructureTraits_::Square`
+- `AlgebraicStructureTraits_::Simplify`
+- `AlgebraicStructureTraits_::UnitPart`
+- `AlgebraicStructureTraits_::IntegralDivision`
+- `AlgebraicStructureTraits_::Divides`
+- `AlgebraicStructureTraits_::Gcd`
+- `AlgebraicStructureTraits_::DivMod`
+- `AlgebraicStructureTraits_::Div`
+- `AlgebraicStructureTraits_::Mod`
+- `AlgebraicStructureTraits_::Inverse`
+- `AlgebraicStructureTraits_::Sqrt`
+- `AlgebraicStructureTraits_::IsSquare`
+- `AlgebraicStructureTraits_::KthRoot`
+- `AlgebraicStructureTraits_::RootOf`
+
+### Classes ###
+
+- `CGAL::Algebraic_structure_traits<T>`
+- `CGAL::Integral_domain_without_division_tag`
+- `CGAL::Integral_domain_tag`
+- `CGAL::Field_tag`
+- `CGAL::Field_with_sqrt_tag`
+- `CGAL::Unique_factorization_domain_tag`
+- `CGAL::Euclidean_ring_tag`
+
+### Global Functions ###
+
+- `CGAL::is_zero()`
+- `CGAL::is_one()`
+- `CGAL::square()`
+- `CGAL::simplify()`
+- `CGAL::unit_part()`
+- `CGAL::integral_division()`
+- `CGAL::is_square()`
+- `CGAL::gcd()`
+- `CGAL::div_mod()`
+- `CGAL::div()`
+- `CGAL::mod()`
+- `CGAL::inverse()`
+- `CGAL::sqrt()`
+- `CGAL::kth_root()`
+- `CGAL::root_of()`
+
+## Real Embeddable ##
+
+### Concepts ###
+
+- `RealEmbeddable`
+
+- `RealEmbeddableTraits`
+- `RealEmbeddableTraits_::IsZero`
+- `RealEmbeddableTraits_::Abs`
+- `RealEmbeddableTraits_::Sgn`
+- `RealEmbeddableTraits_::IsPositive`
+- `RealEmbeddableTraits_::IsNegative`
+- `RealEmbeddableTraits_::Compare`
+- `RealEmbeddableTraits_::ToDouble`
+- `RealEmbeddableTraits_::ToInterval`
+
+### Classes ###
+
+- `CGAL::Real_embeddable_traits<T>`
+
+### Global Functions ###
+
+- `CGAL::is_zero()`
+- `CGAL::abs()`
+- `CGAL::sign()`
+- `CGAL::is_positive()`
+- `CGAL::is_negative()`
+- `CGAL::compare()`
+- `CGAL::to_double()`
+- `CGAL::to_interval()`
+
+## Real Number Types ##
+
+### Concepts ###
+
+- `RingNumberType`
+- `FieldNumberType`
+
+## Interoperability ##
+
+### Concepts ###
+
+- `ExplicitInteroperable`
+- `ImplicitInteroperable`
+
+### Classes ###
+
+- `CGAL::Coercion_traits<A,B>`
+
+## Fractions ##
+
+### Concepts ###
+
+- `Fraction`
+- `FractionTraits`
+- `FractionTraits_::Decompose`
+- `FractionTraits_::Compose`
+- `FractionTraits_::CommonFactor`
+
+### Classes ###
+
+- `CGAL::Fraction_traits<T>`
+
+## Miscellaneous ##
+
+### Concepts ###
+- `FromIntConstructible`
+- `FromDoubleConstructible`
+
+*/
+

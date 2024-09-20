@@ -1,0 +1,49 @@
+/// \defgroup PkgSurfaceMeshSimplification Triangulated Surface Mesh Simplification Reference
+/// \defgroup PkgSurfaceMeshSimplificationConcepts Concepts
+/// \ingroup PkgSurfaceMeshSimplification
+/*!
+\addtogroup PkgSurfaceMeshSimplification
+\todo check generated documentation
+\cgalPkgDescriptionBegin{Triangulated Surface Mesh Simplification,PkgSurfaceMeshSimplificationSummary}
+\cgalPkgPicture{SMS-detail.png}
+\cgalPkgSummaryBegin
+\cgalPkgAuthor{Fernando Cacciola}
+\cgalPkgDesc{This package provides an algorithm to simplify a triangulated surface mesh  by edge collapsing.  It is an implementation of the Turk/Lindstrom <I>memoryless</I>  surface mesh simplification algorithm.}
+\cgalPkgManuals{Chapter_Triangulated_Surface_Mesh_Simplification,PkgSurfaceMeshSimplification}
+\cgalPkgSummaryEnd
+\cgalPkgShortInfoBegin
+\cgalPkgSince{3.3}
+\cgalPkgBib{cgal:c-tsms-12}
+\cgalPkgLicense{\ref licensesGPL "GPL"}
+\cgalPkgDemo{Polyhedron demo,polyhedron_3.zip}
+\cgalPkgShortInfoEnd
+\cgalPkgDescriptionEnd
+
+\cgalClassifedRefPages
+
+## Concepts ##
+- `EdgeCollapsableSurfaceMesh`
+- `EdgeCollapsableSurfaceMeshWithConstraints`
+- `EdgeProfile`
+- `StopPredicate`
+- `GetCost`
+- `GetPlacement`
+- `EdgeCollapseSimplificationVisitor`
+
+## Functions ##
+- `CGAL::Surface_mesh_simplification::edge_collapse()`
+
+## Classes ##
+- `CGAL::Surface_mesh_simplification::Edge_collapse_visitor_base<ECM>`
+- `CGAL::Surface_mesh_simplification::Edge_profile<ECM>`
+- `CGAL::Surface_mesh_simplification::Count_stop_predicate<ECM>`
+- `CGAL::Surface_mesh_simplification::Count_ratio_stop_predicate<ECM>`
+- `CGAL::Surface_mesh_simplification::Edge_length_stop_predicate<ECM>`
+- `CGAL::Surface_mesh_simplification::Edge_length_cost<ECM>`
+- `CGAL::Surface_mesh_simplification::Midpoint_placement<ECM>`
+- `CGAL::Surface_mesh_simplification::LindstromTurk_cost<ECM>`
+- `CGAL::Surface_mesh_simplification::LindstromTurk_placement<ECM>`
+- `CGAL::Surface_mesh_simplification::Constrained_placement<Placement,ECM>`
+- `CGAL::Surface_mesh_simplification::Bounded_normal_change_placement<Placement>`
+*/
+

@@ -1,0 +1,963 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9C78F296-31D7-3AE3-A485-38DCD080C7E3}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>triangle-download</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\triangle\CMakeFiles\85dd137e937a6dbea15987d546ee22d8\triangle-download-mkdir.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Creating directories for 'triangle-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/cmake/../external/triangle
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/build/triangle-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/triangle/triangle-download-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/$(Configuration)/triangle-download-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Creating directories for 'triangle-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/cmake/../external/triangle
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/build/triangle-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/triangle/triangle-download-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/$(Configuration)/triangle-download-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Creating directories for 'triangle-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/cmake/../external/triangle
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/build/triangle-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/triangle/triangle-download-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/$(Configuration)/triangle-download-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Creating directories for 'triangle-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/cmake/../external/triangle
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/build/triangle-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/triangle/triangle-download-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/$(Configuration)/triangle-download-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\triangle\CMakeFiles\85dd137e937a6dbea15987d546ee22d8\triangle-download-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing download step (git clone) for 'triangle-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\dev\libigl\external
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -P C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/tmp/triangle-download-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/$(Configuration)/triangle-download-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\triangle-download-gitinfo.txt;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing download step (git clone) for 'triangle-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\dev\libigl\external
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -P C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/tmp/triangle-download-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/$(Configuration)/triangle-download-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\triangle-download-gitinfo.txt;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing download step (git clone) for 'triangle-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\dev\libigl\external
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -P C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/tmp/triangle-download-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/$(Configuration)/triangle-download-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\triangle-download-gitinfo.txt;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing download step (git clone) for 'triangle-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\dev\libigl\external
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -P C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/tmp/triangle-download-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/$(Configuration)/triangle-download-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\triangle-download-gitinfo.txt;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\triangle\CMakeFiles\85dd137e937a6dbea15987d546ee22d8\triangle-download-update.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing update step for 'triangle-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\dev\libigl\external\triangle
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -P C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/tmp/triangle-download-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing update step for 'triangle-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\dev\libigl\external\triangle
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -P C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/tmp/triangle-download-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing update step for 'triangle-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\dev\libigl\external\triangle
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -P C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/tmp/triangle-download-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing update step for 'triangle-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\dev\libigl\external\triangle
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -P C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/tmp/triangle-download-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\triangle\CMakeFiles\85dd137e937a6dbea15987d546ee22d8\triangle-download-patch.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No patch step for 'triangle-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/$(Configuration)/triangle-download-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No patch step for 'triangle-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/$(Configuration)/triangle-download-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No patch step for 'triangle-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/$(Configuration)/triangle-download-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No patch step for 'triangle-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/$(Configuration)/triangle-download-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\triangle\CMakeFiles\85dd137e937a6dbea15987d546ee22d8\triangle-download-configure.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No configure step for 'triangle-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\dev\libigl\build\triangle-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/$(Configuration)/triangle-download-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\tmp\triangle-download-cfgcmd.txt;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No configure step for 'triangle-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\dev\libigl\build\triangle-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/$(Configuration)/triangle-download-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\tmp\triangle-download-cfgcmd.txt;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No configure step for 'triangle-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\dev\libigl\build\triangle-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/$(Configuration)/triangle-download-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\tmp\triangle-download-cfgcmd.txt;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No configure step for 'triangle-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\dev\libigl\build\triangle-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/$(Configuration)/triangle-download-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\tmp\triangle-download-cfgcmd.txt;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\triangle\CMakeFiles\85dd137e937a6dbea15987d546ee22d8\triangle-download-build.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No build step for 'triangle-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\dev\libigl\build\triangle-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/$(Configuration)/triangle-download-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No build step for 'triangle-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\dev\libigl\build\triangle-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/$(Configuration)/triangle-download-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No build step for 'triangle-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\dev\libigl\build\triangle-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/$(Configuration)/triangle-download-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No build step for 'triangle-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\dev\libigl\build\triangle-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/$(Configuration)/triangle-download-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\triangle\CMakeFiles\85dd137e937a6dbea15987d546ee22d8\triangle-download-install.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No install step for 'triangle-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\dev\libigl\build\triangle-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/$(Configuration)/triangle-download-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No install step for 'triangle-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\dev\libigl\build\triangle-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/$(Configuration)/triangle-download-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No install step for 'triangle-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\dev\libigl\build\triangle-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/$(Configuration)/triangle-download-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No install step for 'triangle-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\dev\libigl\build\triangle-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/$(Configuration)/triangle-download-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\triangle\CMakeFiles\85dd137e937a6dbea15987d546ee22d8\triangle-download-test.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No test step for 'triangle-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\dev\libigl\build\triangle-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/$(Configuration)/triangle-download-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No test step for 'triangle-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\dev\libigl\build\triangle-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/$(Configuration)/triangle-download-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No test step for 'triangle-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\dev\libigl\build\triangle-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/$(Configuration)/triangle-download-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No test step for 'triangle-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\dev\libigl\build\triangle-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/$(Configuration)/triangle-download-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\triangle\CMakeFiles\d7fd028f13bfce61486fce4af4bdd973\triangle-download-complete.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Completed 'triangle-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/triangle/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/triangle/CMakeFiles/$(Configuration)/triangle-download-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/$(Configuration)/triangle-download-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-install;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-mkdir;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-download;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-update;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-patch;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-configure;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-build;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\triangle\CMakeFiles\$(Configuration)\triangle-download-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Completed 'triangle-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/triangle/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/triangle/CMakeFiles/$(Configuration)/triangle-download-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/$(Configuration)/triangle-download-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-install;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-mkdir;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-download;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-update;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-patch;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-configure;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-build;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\triangle\CMakeFiles\$(Configuration)\triangle-download-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Completed 'triangle-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/triangle/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/triangle/CMakeFiles/$(Configuration)/triangle-download-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/$(Configuration)/triangle-download-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-install;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-mkdir;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-download;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-update;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-patch;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-configure;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-build;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\triangle\CMakeFiles\$(Configuration)\triangle-download-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Completed 'triangle-download'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\cmake\bin\cmake.exe" -E make_directory C:/dev/libigl/external/.cache/triangle/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/triangle/CMakeFiles/$(Configuration)/triangle-download-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\cmake\bin\cmake.exe" -E touch C:/dev/libigl/external/.cache/triangle/triangle-download-prefix/src/triangle-download-stamp/$(Configuration)/triangle-download-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-install;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-mkdir;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-download;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-update;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-patch;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-configure;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-build;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\src\triangle-download-stamp\$(Configuration)\triangle-download-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\triangle\CMakeFiles\$(Configuration)\triangle-download-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\triangle\CMakeFiles\5025ec372a741671ee0d08431813042f\triangle-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\triangle\CMakeFiles\$(Configuration)\triangle-download-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\triangle\CMakeFiles\triangle-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\triangle\CMakeFiles\$(Configuration)\triangle-download-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\triangle\CMakeFiles\triangle-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\triangle\CMakeFiles\$(Configuration)\triangle-download-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\triangle\CMakeFiles\triangle-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\triangle\CMakeFiles\$(Configuration)\triangle-download-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\triangle\CMakeFiles\triangle-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\triangle\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/dev/libigl/external/.cache/triangle/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\cmake\bin\cmake.exe" -SC:/dev/libigl/external/.cache/triangle -BC:/dev/libigl/external/.cache/triangle --check-stamp-file C:/dev/libigl/external/.cache/triangle/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeDetermineSystem.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeSystem.cmake.in;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\ExternalProject-gitupdate.cmake.in;C:\Program Files\cmake\share\cmake-3.18\Modules\ExternalProject.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\FindGit.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\RepositoryInfo.txt.in;C:\dev\libigl\external\.cache\triangle\CMakeFiles\3.18.2\CMakeSystem.cmake;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\tmp\triangle-download-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\libigl\external\.cache\triangle\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/dev/libigl/external/.cache/triangle/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\cmake\bin\cmake.exe" -SC:/dev/libigl/external/.cache/triangle -BC:/dev/libigl/external/.cache/triangle --check-stamp-file C:/dev/libigl/external/.cache/triangle/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeDetermineSystem.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeSystem.cmake.in;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\ExternalProject-gitupdate.cmake.in;C:\Program Files\cmake\share\cmake-3.18\Modules\ExternalProject.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\FindGit.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\RepositoryInfo.txt.in;C:\dev\libigl\external\.cache\triangle\CMakeFiles\3.18.2\CMakeSystem.cmake;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\tmp\triangle-download-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\libigl\external\.cache\triangle\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/dev/libigl/external/.cache/triangle/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\cmake\bin\cmake.exe" -SC:/dev/libigl/external/.cache/triangle -BC:/dev/libigl/external/.cache/triangle --check-stamp-file C:/dev/libigl/external/.cache/triangle/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeDetermineSystem.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeSystem.cmake.in;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\ExternalProject-gitupdate.cmake.in;C:\Program Files\cmake\share\cmake-3.18\Modules\ExternalProject.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\FindGit.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\RepositoryInfo.txt.in;C:\dev\libigl\external\.cache\triangle\CMakeFiles\3.18.2\CMakeSystem.cmake;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\tmp\triangle-download-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\libigl\external\.cache\triangle\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/dev/libigl/external/.cache/triangle/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\cmake\bin\cmake.exe" -SC:/dev/libigl/external/.cache/triangle -BC:/dev/libigl/external/.cache/triangle --check-stamp-file C:/dev/libigl/external/.cache/triangle/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeDetermineSystem.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeSystem.cmake.in;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\ExternalProject-gitupdate.cmake.in;C:\Program Files\cmake\share\cmake-3.18\Modules\ExternalProject.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\FindGit.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\Program Files\cmake\share\cmake-3.18\Modules\RepositoryInfo.txt.in;C:\dev\libigl\external\.cache\triangle\CMakeFiles\3.18.2\CMakeSystem.cmake;C:\dev\libigl\external\.cache\triangle\triangle-download-prefix\tmp\triangle-download-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\libigl\external\.cache\triangle\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\dev\libigl\external\.cache\triangle\CMakeFiles\triangle-download">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\dev\libigl\external\.cache\triangle\ZERO_CHECK.vcxproj">
+      <Project>{9BE00DA1-F075-3BA3-947F-CB00F4E01767}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

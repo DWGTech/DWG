@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\libigl-imgui\CMakeFiles\b035babc0b6f30f4827556fe82b3a48f\libigl-imgui-download-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\libigl-imgui\CMakeFiles\b035babc0b6f30f4827556fe82b3a48f\libigl-imgui-download-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\libigl-imgui\CMakeFiles\b035babc0b6f30f4827556fe82b3a48f\libigl-imgui-download-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\libigl-imgui\CMakeFiles\b035babc0b6f30f4827556fe82b3a48f\libigl-imgui-download-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\libigl-imgui\CMakeFiles\b035babc0b6f30f4827556fe82b3a48f\libigl-imgui-download-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\libigl-imgui\CMakeFiles\b035babc0b6f30f4827556fe82b3a48f\libigl-imgui-download-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\libigl-imgui\CMakeFiles\b035babc0b6f30f4827556fe82b3a48f\libigl-imgui-download-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\libigl-imgui\CMakeFiles\b035babc0b6f30f4827556fe82b3a48f\libigl-imgui-download-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\libigl-imgui\CMakeFiles\4f2c04c26b494232f318a77234b6f475\libigl-imgui-download-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\libigl-imgui\CMakeFiles\56ce3c03447cf8d37b5af3de0cf8001c\libigl-imgui-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\libigl-imgui\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\dev\libigl\external\.cache\libigl-imgui\CMakeFiles\libigl-imgui-download" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{25C8E945-8E18-3F55-A895-1917F20FB20F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

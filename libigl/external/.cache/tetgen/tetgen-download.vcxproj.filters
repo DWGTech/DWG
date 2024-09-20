@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\tetgen\CMakeFiles\a674774509e184f54612f6f2bf72e803\tetgen-download-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\tetgen\CMakeFiles\a674774509e184f54612f6f2bf72e803\tetgen-download-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\tetgen\CMakeFiles\a674774509e184f54612f6f2bf72e803\tetgen-download-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\tetgen\CMakeFiles\a674774509e184f54612f6f2bf72e803\tetgen-download-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\tetgen\CMakeFiles\a674774509e184f54612f6f2bf72e803\tetgen-download-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\tetgen\CMakeFiles\a674774509e184f54612f6f2bf72e803\tetgen-download-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\tetgen\CMakeFiles\a674774509e184f54612f6f2bf72e803\tetgen-download-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\tetgen\CMakeFiles\a674774509e184f54612f6f2bf72e803\tetgen-download-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\tetgen\CMakeFiles\7bde3ab54d26f99f46bd3b9086d6fd4b\tetgen-download-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\tetgen\CMakeFiles\4d0bd16da805525ad16388ee0beaa494\tetgen-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\tetgen\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\dev\libigl\external\.cache\tetgen\CMakeFiles\tetgen-download" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{22AC25E2-510B-31B1-94BC-1A6EC0194A88}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\CoMISo\CMakeFiles\53f89945e34673015cf65a5e7ddcb6bc\CoMISo-download-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\CoMISo\CMakeFiles\53f89945e34673015cf65a5e7ddcb6bc\CoMISo-download-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\CoMISo\CMakeFiles\53f89945e34673015cf65a5e7ddcb6bc\CoMISo-download-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\CoMISo\CMakeFiles\53f89945e34673015cf65a5e7ddcb6bc\CoMISo-download-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\CoMISo\CMakeFiles\53f89945e34673015cf65a5e7ddcb6bc\CoMISo-download-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\CoMISo\CMakeFiles\53f89945e34673015cf65a5e7ddcb6bc\CoMISo-download-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\CoMISo\CMakeFiles\53f89945e34673015cf65a5e7ddcb6bc\CoMISo-download-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\CoMISo\CMakeFiles\53f89945e34673015cf65a5e7ddcb6bc\CoMISo-download-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\CoMISo\CMakeFiles\88217164afa1e76c8be7f3e51ad87527\CoMISo-download-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\CoMISo\CMakeFiles\72d2871aee541e22fb2630d1f22f66de\CoMISo-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\CoMISo\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\dev\libigl\external\.cache\CoMISo\CMakeFiles\CoMISo-download" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{21214D47-71B9-3E20-B414-C43FAB5DA6A8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

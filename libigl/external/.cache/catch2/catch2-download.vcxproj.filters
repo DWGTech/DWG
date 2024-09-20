@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\catch2\CMakeFiles\edcf6375897c95b812f16ba7b241b32b\catch2-download-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\catch2\CMakeFiles\edcf6375897c95b812f16ba7b241b32b\catch2-download-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\catch2\CMakeFiles\edcf6375897c95b812f16ba7b241b32b\catch2-download-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\catch2\CMakeFiles\edcf6375897c95b812f16ba7b241b32b\catch2-download-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\catch2\CMakeFiles\edcf6375897c95b812f16ba7b241b32b\catch2-download-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\catch2\CMakeFiles\edcf6375897c95b812f16ba7b241b32b\catch2-download-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\catch2\CMakeFiles\edcf6375897c95b812f16ba7b241b32b\catch2-download-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\catch2\CMakeFiles\edcf6375897c95b812f16ba7b241b32b\catch2-download-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\catch2\CMakeFiles\38706d67f1519a715269644ad46a8362\catch2-download-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\catch2\CMakeFiles\1f73ce520d171f765032171168cdfc1e\catch2-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\libigl\external\.cache\catch2\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\dev\libigl\external\.cache\catch2\CMakeFiles\catch2-download" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{36832E19-2A9E-39C4-B565-BCC284708737}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
