@@ -38,6 +38,28 @@ int main(int argc, char* argv[])
     float offset_2 = 0.01;
     int test_iter = 999999;
 
+    if (std::strcmp(argv[1], "--help") == 0)
+    {
+        std::cout << "--in_path   " << "The absolute path of the input point cloud" << std::endl;
+        std::cout << "--in_name   " << "The file name of the input point cloud (only supports .xyz currently)" << std::endl;
+        std::cout << "--out_path   " << "The absolute path of the output mesh/point cloud with normals" << std::endl;
+        std::cout << "--output_mode   " << "Ouput mode: 1 Mesh(.stl) (default)   2 Point cloud with normals(.xyz)   3 Both 1 and 2" << std::endl;
+        std::cout << "--in_normal   " << "Initialization mode: 0 Random   1 Input   3 Gauss map (default)" << std::endl;
+        std::cout << "--lambda   " << "Screening Coefficient" << std::endl;
+        std::cout << "--max_depth   " << "The max depth of octree" << std::endl;
+        std::cout << "--use_radii   " << "Turn on screening mode or not (0 turn off   1 turn on)" << std::endl;
+        std::cout << "--kw   " << "The number of nearest neighbors for the iteration (default 10)" << std::endl;
+        std::cout << "--final_kw   " << "The number of nearest neighbors for the final output, usually be same to kw (default 10)" << std::endl;
+        std::cout << "--grid_reso   " << "The resolution of Marching Cubes for the iteration (e.g. 200 for <10w size; 450 for >1000w size)" << std::endl;
+        std::cout << "--final_reso   " << "The resolution of Marching Cubes for the final output (e.g. 260 for <10w size; 700 for >1000w size)" << std::endl;
+        std::cout << "--total_iter   " << "The number of iteration" << std::endl;
+        std::cout << "--test_iter   " << "Output the result each [test_iter] iterations (it is turned off by default)" << std::endl;
+        std::cout << "--com_As   " << "Computing area weight or not (0 turn off   1 turn on)" << std::endl;
+        std::cout << "--use_leaves_generate   " << "Recommend to open it (0 turn off   1 turn on), when the point cloud noise is high" << std::endl;
+
+        return 0;
+    }
+
     for (int i = 1; i < argc; i += 2)
     {
         if (std::strcmp(argv[i], "--in_path") == 0)
@@ -80,7 +102,7 @@ int main(int argc, char* argv[])
         {
             normal_kw = std::stoi(argv[i + 1]);
         }
-        else if (std::strcmp(argv[i], "--sigma") == 0)
+        else if (std::strcmp(argv[i], "--lambda") == 0)
         {
             sigma = std::stof(argv[i + 1]);
         }
