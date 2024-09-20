@@ -15,7 +15,7 @@ Please install [CMake](https://cmake.org)
     cmake .. -DCMAKE_BUILD_TYPE=Release
     make
 
-Thanks to [libigl](https://libigl.github.io/), [Geometry Central](https://geometry-central.net/), [cudaKDTree](https://github.com/ingowald/cudaKDTree), [marching-cubes-with-CUDA](https://github.com/lcaucci78/marching-cubes-with-CUDA), these libraries provide us with good assistance.
+Thanks to [libigl](https://libigl.github.io/), [Geometry Central](https://geometry-central.net/), [cudaKDTree](https://github.com/ingowald/cudaKDTree), [marching-cubes-with-CUDA](https://github.com/lcaucci78/marching-cubes-with-CUDA), these libraries provide us with big assistance.
 ## Run
     ./DWG_CUDA --in_path <path> --in_name <file name> --out_path <path>
 See --help for the function of each flag  `./DWG_CUDA --help`
