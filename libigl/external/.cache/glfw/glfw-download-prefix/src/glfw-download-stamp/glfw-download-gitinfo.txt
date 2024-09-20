@@ -1,3 +1,0 @@
-repository='https://github.com/glfw/glfw.git'
-module=''
-tag='origin'

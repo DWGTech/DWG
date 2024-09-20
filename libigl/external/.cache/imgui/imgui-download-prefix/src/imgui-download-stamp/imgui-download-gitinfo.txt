@@ -1,3 +1,0 @@
-repository='https://github.com/ocornut/imgui.git'
-module=''
-tag='origin'

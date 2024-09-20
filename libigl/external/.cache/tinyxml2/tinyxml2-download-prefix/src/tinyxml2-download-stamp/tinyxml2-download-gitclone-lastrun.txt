@@ -1,3 +1,0 @@
-repository='https://github.com/leethomason/tinyxml2.git'
-module=''
-tag='origin'

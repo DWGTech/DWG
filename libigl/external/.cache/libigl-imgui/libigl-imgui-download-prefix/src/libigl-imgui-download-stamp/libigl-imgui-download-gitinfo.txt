@@ -1,3 +1,0 @@
-repository='https://github.com/libigl/libigl-imgui.git'
-module=''
-tag='origin'

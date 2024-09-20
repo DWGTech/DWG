@@ -1,3 +1,0 @@
-repository='https://github.com/jdumas/tetgen.git'
-module=''
-tag='origin'

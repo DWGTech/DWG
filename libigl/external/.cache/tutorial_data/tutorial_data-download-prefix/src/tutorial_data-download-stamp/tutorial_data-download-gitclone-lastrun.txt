@@ -1,3 +1,0 @@
-repository='https://github.com/libigl/libigl-tutorial-data'
-module=''
-tag='origin'

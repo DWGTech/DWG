@@ -1,3 +1,0 @@
-repository='https://github.com/libigl/CoMISo.git'
-module=''
-tag='origin'

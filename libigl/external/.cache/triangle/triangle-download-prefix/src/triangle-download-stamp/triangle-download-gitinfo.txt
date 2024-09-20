@@ -1,3 +1,0 @@
-repository='https://github.com/libigl/triangle.git'
-module=''
-tag='origin'
