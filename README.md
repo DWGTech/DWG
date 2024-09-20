@@ -22,5 +22,5 @@ See --help for the function of each flag  `./DWG_CUDA --help`
     
 ## TODO
   * Provide a more detailed explanation of the parameters.
-  * The results of small-scale models on Linux are a bit rougher compared to those on Windows. We will identify the cause as soon as possible.
+  * The results of small-scale models on Linux are a bit rougher compared to those on Windows. We will identify the problems as soon as possible.
 
