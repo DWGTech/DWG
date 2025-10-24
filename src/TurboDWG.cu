@@ -1,5 +1,5 @@
 # include "TurboDWG.h"
-
+#include <thrust/sort.h>   
 #define gpuErrchk(ans) { gpuAssert((ans), #ans, __FILE__, __LINE__); }
 inline void gpuAssert(cudaError_t code, const char* command, const char* file, int line, bool abort = true)
 {

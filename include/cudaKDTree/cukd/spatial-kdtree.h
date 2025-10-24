@@ -20,6 +20,7 @@
 #include <cub/cub.cuh>
 #include <cuda.h>
 #include <cuda_runtime_api.h>
+#include <cfloat>
 
 namespace cukd {
 
